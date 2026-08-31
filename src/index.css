@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+html {
+  background: var(--bg-0, #070809);
+}
+
+body {
+  overflow: hidden;
+  color: var(--text, #d6dde6);
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+#root {
+  min-width: 1180px;
+}

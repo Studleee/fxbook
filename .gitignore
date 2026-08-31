@@ -1,0 +1,15 @@
+node_modules
+dist
+dist-ssr
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+.venv/
+server/sheets_py/bindings.local.json
+server/sheets_py/service_account.local.json
+server/sheets_py/service_account.json
+backend/credentials/*.json
+

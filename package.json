@@ -1,0 +1,31 @@
+{
+  "name": "fxbook",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "sheets": "python server/sheets_py/app.py",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:fx": "npx tsx src/fx/pips.selfcheck.ts",
+    "test:corr": "npx tsx src/analytics/correlation.selfcheck.ts",
+    "test:risk": "npx tsx src/risk/portfolio/risk.selfcheck.ts",
+    "test:decision": "npx tsx src/risk/portfolio/decision.selfcheck.ts",
+    "test:factor": "npx tsx src/risk/factor/factor.selfcheck.ts"
+  },
+  "dependencies": {
+    "lightweight-charts": "^4.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "~5.7.3",
+    "vite": "^6.2.0"
+  }
+}
